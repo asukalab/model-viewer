@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>WebAR for OUTPOST model</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
+  </head>
+  <body>
+      <model-viewer 
+        src="outpost/outpost.glb" 
+        ios-src="outpost/outpost.usdz" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        ar-scale="auto" 
+        camera-controls 
+        alt="A 3D model of an astronaut" 
+        background-color="#70BCD1"
+      ></model-viewer>
+  </body>
+</html>
