@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
     <title>WebAR for jibunhouse model</title>
     <p>viewerを使用しない形式</p>
     <script
@@ -13,10 +14,25 @@
       nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
     </script>
+    <script>
+        $(function(){
+            function OnLinkClick(){
+                target = document.getElementById("ar-button");
+                target.href = "jibunhouse/jibunhouse.usdz";
+            }
+        });
+    </script>
   </head>
   <body>
     <div>
+        <p>ARマークあり</p>
         <a rel="ar" href="jibunhouse/jibunhouse.usdz">
+            <img src="jibunhouse/antico.jpg">
+        </a>
+    </div>
+    <div>
+        <p>ARマークなし</p>
+        <a rel="ar" id="ar-button" href="javascript:OnLinkClick();">
             <img src="jibunhouse/antico.jpg">
         </a>
     </div>
