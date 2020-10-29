@@ -16,10 +16,11 @@
     </script>
     <script>
         $(function(){
-            function OnLinkClick(){
+            $('#ar-button').click(function(event){
                 target = document.getElementById("ar-button");
                 target.href = "jibunhouse/jibunhouse.usdz";
-            }
+                console.log('click image')
+            })
         });
     </script>
   </head>
@@ -32,7 +33,7 @@
     </div>
     <div>
         <p>ARマークなし</p>
-        <a rel="ar" id="ar-button" href="javascript:OnLinkClick();">
+        <a rel="ar" id="ar-button" href="javascript:void(0)">
             <img src="jibunhouse/antico.jpg">
         </a>
     </div>
