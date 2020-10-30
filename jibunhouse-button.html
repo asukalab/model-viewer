@@ -6,21 +6,21 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <title>WebAR for jibunhouse model</title>
     <p>直接AR Quick Lookを起動</p>
-    <script
+    <!-- <script
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     </script>
     <script
       nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-    </script>
+    </script> -->
     <script>
         $(function(){
+            //現状はiOSのみで検証
             $('#ar-button').click(function(event){
                 target = document.getElementById("ar-button");
                 target.relList.add("ar");
                 target.href = "jibunhouse/jibunhouse.usdz";
-                console.log('click image')
             })
         });
     </script>
