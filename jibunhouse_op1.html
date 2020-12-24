@@ -7,13 +7,21 @@
     <p>壁モデリング Option1_OBJ</p>
     <p>右下のボタンをタップするとARモードに切り替わります。</p>
     <script
+        type="module"
+        src="js/model-viewer.min_1.2.1.js">
+    </script>
+    <script
+        nomodule
+        src="js/model-viewer-legacy_1.2.1.js">
+    </script>
+    <!-- <script
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     </script>
     <script
       nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-    </script>
+    </script> -->
     <style>
         model-viewer {
             width: 100%;
@@ -27,7 +35,7 @@
   </head>
   <body>
       <model-viewer 
-        src="jibunhouse/1224/OP1/OP1.gltf" 
+        src="jibunhouse/1224/OP1/OP1.glb" 
         ios-src="jibunhouse/1224/OP1/OP1.usdz" 
         ar 
         ar-modes="webxr scene-viewer quick-look"

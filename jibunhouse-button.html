@@ -20,7 +20,7 @@
             $('#ar-button').click(function(event){
                 target = document.getElementById("ar-button");
                 target.relList.add("ar");
-                target.href = "jibunhouse/jibunhouse.usdz";
+                target.href = "jibunhouse/test/jibunhouse.usdz";
             })
         });
     </script>
@@ -29,15 +29,15 @@
     <div>
         <p>ARマークあり</p>
         <!-- rel='ar' をつけることでAR Quick Look対応であることを識別しARマークが表示される-->
-        <a rel="ar" href="jibunhouse/jibunhouse.usdz">
-            <img src="jibunhouse/antico.jpg">
+        <a rel="ar" href="jibunhouse/test/jibunhouse.usdz">
+            <img src="jibunhouse/test/antico.jpg">
         </a>
     </div>
     <div>
         <p>ARマークなし</p>
         <!--relを付けないことで単なる画像として認識されARマークがつかない-->
         <a id="ar-button" href="javascript:void(0)">
-            <img src="jibunhouse/antico.jpg">
+            <img src="jibunhouse/test/antico.jpg">
         </a>
     </div>
   </body>
